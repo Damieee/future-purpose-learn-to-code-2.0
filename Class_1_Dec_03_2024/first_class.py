@@ -3,25 +3,31 @@ class_dict = {"name":"bag", "number":2, "color": {"black":1, "blue": [1,2,3], "r
 
 # Tuples
 # immutable list, a list that cannot be changed later
-class_list = ("ezekiel", "gideon", "henry")
+class_tuple = ("ezekiel", "gideon", "henry")
 
 # List
 # mutable list, a list that can be changed later
-class_names = ["babatunde", "beatrice", "chioma", 1, 2, 3.5 ]
+class_list = ["shoes", "bags", "books", 1, 2, 3.5 ]
 
-# Integers
-number = 345
+class_tuple[1] = "umbrella"
+print(class_tuple)
 
-# Floats
-currency = 3.5
+# # String
+# name = 'vivian'
 
-print(number + currency)
-print(number - currency)
-print(number * currency)
-print(number / currency)
+# # Integers
+# number = 23
 
-# Boolean
-is_black = True
+# # Floats
+# price = 3.5
+
+# print(number + price)
+# print(number - price)
+# print(number * price)
+# print(number / price)
+
+# # Boolean
+# is_black = True
 
 
 
