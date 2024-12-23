@@ -33,7 +33,7 @@ class BankAccount:
 
 # output
 
-# account1 = BankAccount(1, "Popoola", "Savings", 100000)
+account1 = BankAccount(1, "Popoola", "Savings", 100000)
 account2 = BankAccount(2, "Owoyanturu", "Savings", 50000)
 
 account1.deposit(5000)
