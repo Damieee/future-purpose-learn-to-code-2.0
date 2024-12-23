@@ -13,6 +13,12 @@ This is a simple FastAPI application to demonstrate the basics of FastAPI, inclu
    ```sh
    pip install poetry
    ```
+   or 
+
+   ```sh
+   curl -sSL https://install.python-poetry.org | python -
+   ```
+
 
 2. **Clone the repository**:
    ```sh
