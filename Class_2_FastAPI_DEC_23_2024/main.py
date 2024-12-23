@@ -56,7 +56,6 @@ async def create_book(book_request: CreateBookDTO):
     BOOKS.append(new_book)
     return new_book
 
-
 # Define a PATCH endpoint to update an existing book
 @app.patch("/books/{title}/update_book_author")
 async def update_book(title: str, updated_book: UpdateBookAuthorDto):
