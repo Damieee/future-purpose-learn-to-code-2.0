@@ -57,7 +57,7 @@ async def create_book(book_request: CreateBookDTO):
     return new_book
 
 
-# Define a PUT endpoint to update an existing book
+# Define a PATCH endpoint to update an existing book
 @app.patch("/books/{title}/update_book_author")
 async def update_book(title: str, updated_book: UpdateBookAuthorDto):
     for i in range(len(BOOKS)):
@@ -72,5 +72,5 @@ async def delete_book(book_title: str):
     for i in range(len(BOOKS)):
         if BOOKS[i].get("title").casefold() == book_title.casefold():
             BOOKS.pop(i)
-            return {"message": "Book deleted"}
-    return {"message": "Book not found"}
+            return {"message": f"Book with Title {book_title} has been deleted"}
+    return {"message": f"Book with title {book_title} not found"}
