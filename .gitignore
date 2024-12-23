@@ -1,0 +1,12 @@
+# FastAPI
+.env
+.env.test
+
+# Pytest
+.pytest_cache/
+
+# Pycache
+__pycache__/
+
+# VSCode
+.vscode/
