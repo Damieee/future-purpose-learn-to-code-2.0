@@ -42,9 +42,15 @@ In this assignment, you will create 6 additional routes for the FastAPI applicat
 2. Implement the 6 routes described above in `assignment.py`.
 3. Use the `BOOKS` data from `data.py` for all operations.
 4. Ensure that your code is well-documented and follows best practices.
+5. Run your application with the following command:
+   ```sh
+   poetry run uvicorn Class_2_FastAPI_DEC_23_2024.assignment:app --reload
+   ```
 
 ## Submission
 
-Submit your completed `assignment.py` file by the due date. Ensure that all routes are tested and working correctly.
+- Push your completed `assignment.py` file to your branch only. Do not create a pull request.
+- Ensure that all routes are tested and working correctly.
+- The deadline for the assignment is Saturday, December 28,2024 at 11:59 PM.
 
 Good luck!
