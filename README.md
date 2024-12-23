@@ -46,7 +46,7 @@ This is a simple FastAPI application to demonstrate the basics of FastAPI, inclu
 
 To run the FastAPI application, use the following command:
 ```sh
-poetry run uvicorn main:app --reload
+poetry run uvicorn Class_2_FastAPI_DEC_23_2024.main:app --reload
 ```
 
 This will start the FastAPI server on `http://127.0.0.1:8000`.
@@ -69,20 +69,17 @@ This will start the FastAPI server on `http://127.0.0.1:8000`.
 
 ## Endpoints
 
-### GET /api-endpoint
-Returns a simple greeting message.
-
 ### GET /
+Returns a greeting message and links to all API endpoints.
+
+### GET /books
 Returns a list of all books.
-
-### GET /books/{dynamic_param}
-Returns the dynamic parameter passed in the URL.
-
-### GET /books/{book_title}
-Returns a book by its title.
 
 ### GET /books/
 Returns books by category using query parameters.
+
+### GET /books/{book_title}
+Returns a book by its title.
 
 ### GET /books/{book_author}/
 Returns books by author and category using query parameters.
@@ -93,8 +90,8 @@ Creates a new book using the request body.
 ### POST /create-book
 Creates a new book using a Pydantic model.
 
-### PUT /books/update_book
-Updates an existing book using the request body.
+### PATCH /books/{title}/update_book_author
+Updates the author of an existing book using the request body.
 
 ### DELETE /books/delete_book/{book_title}
 Deletes a book by its title.
