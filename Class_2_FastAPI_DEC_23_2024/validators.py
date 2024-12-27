@@ -7,3 +7,10 @@ class CreateBookDTO(BaseModel):
     
 class UpdateBookAuthorDto(BaseModel):  
     author: str = Field(min_length=3, title="Author of the book")
+
+class UpdateBookCategoryDto(BaseModel):  
+    category: str = Field(min_length=3, category="Category of the book")
+
+
+class UpdateBookTitleDto(BaseModel):  
+    title: str = Field(min_length=3, title="Title of the book")
