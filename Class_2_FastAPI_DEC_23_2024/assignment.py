@@ -45,7 +45,7 @@ async def update_category(book_title: str, updated_book:UpdateBookCategoryDto):
 async def update_title(book_title:str, updated_book:UpdateBookTitleDto):
     for i in range(len(BOOKS)):
         if BOOKS[i].get("title").casefold() == book_title.casefold():
-            BOOKS[i]["new_title"] = updated_book.title
+            BOOKS[i]["title"] = updated_book.title
             return BOOKS[i]
     return {"message": f"Book with title {book_title} not found"}
 
