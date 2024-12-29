@@ -1,5 +1,5 @@
 # Import necessary modules from FastAPI
-from fastapi import FastAPI, Body, Query
+from fastapi import FastAPI, Body, Query, path
 from .validators import CreateBookDTO, UpdateBookAuthorDto
 from .data import BOOKS
 # Create an instance of FastAPI
